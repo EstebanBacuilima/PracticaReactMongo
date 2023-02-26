@@ -2,7 +2,8 @@ import axios from "axios";
 
 export class ProductService {
 
-    baseUrl = "http://localhost:8080/api/products/";
+    // baseUrl = "http://localhost:8080/api/products/";
+    uriRailway = "https://backendmongodb-production.up.railway.app/api/products/";
 
     create(product){
         return axios.post(this.baseUrl+"product/", product).then(res => res.data);
